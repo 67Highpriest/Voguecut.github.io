@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue Cut</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <button id="backToTop"><i class="fas fa-chevron-up"></i></button>
+    <header>
+        <div class="logo">
+            <h1></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="button-container">
+        <button id="bookAppointmentBtn">Book Appointment</button>
+    </div>
+
+    <div id="bookingFormContainer" class="booking-form-container">
+        <button type="button" id="closeFormBtn" class="close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <form id="bookingForm" class="booking-form">
+            <h2>Book an Appointment</h2>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <section class="banner">
+        <h2>Welcome to Vogue Cut</h2>
+        <p>Your premium barbershop experience awaits. Enjoy the finest grooming services in a sophisticated environment.</p>
+    </section>
+
+    <section class="our-services">
+        <h3>Our Services</h3>
+        <div class="services-container">
+            <div class="service-box">
+                <i class="fas fa-cut"></i>
+                <h4>Haircuts</h4>
+                <p>Precision cuts tailored to your style.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-shaving-kit"></i>
+                <h4>Shaves</h4>
+                <p>Relaxing hot towel shaves for a smooth finish.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-beard"></i>
+                <h4>Beard Grooming</h4>
+                <p>Expert beard trimming and grooming.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-scissors"></i>
+                <h4>Styling</h4>
+                <p>Modern styles and classic looks.</p>
+            </div>
+        </div>
+    </section>
+
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="images/1.jpg" alt="Work 1">
+        <div class="text"></div>
+    </div>
+    <div class="slide fade">
+        <img src="images/2.jpg" alt="Work 2">
+        <div class="text"></div>
+    </div>
+ <div class="slide fade">
+        <img src="images/3.jpg" alt="Work 3">
+        <div class="text"></div>
+    </div>
+ <div class="slide fade">
+        <img src="images/4.jpg" alt="Work 4">
+        <div class="text"></div>
+    </div>
+ <div class="slide fade">
+        <img src="images/5.jpg" alt="Work 5">
+        <div class="text"></div>
+    </div>
+    <!-- Add more slides as needed -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries or appointments, please reach out to us:</p>
+            <p>Email: <a href="mailto:info@voguecut.com">info@voguecut.com</a></p>
+            <p>Phone: + (233) 2401-90150</p>
+            <p>Address: Accra, Ghana</p>
+        </section>
+
+        <p>&copy; 2024 Vogue Cut. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="https://facebook.com" class="social-icon facebook" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" class="social-icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" class="social-icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" class="social-icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://youtube.com" class="social-icon youtube" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+      <a href="https://goo.gl/maps/abcd1234" target="_blank" class="map-icon" aria-label="Find us on Google Maps">
+            <i class="fas fa-map-marker-alt"></i>
+        </a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
